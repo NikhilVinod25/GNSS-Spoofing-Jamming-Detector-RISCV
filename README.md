@@ -143,10 +143,3 @@ The demonstration shows the operation of the implemented system and the correspo
 
 Detailed information regarding the design, implementation, methodology and results is available in the project report inside the `Docs` directory.
 
-## Author
-
-**Nikhil Vinod**
-
-Electronics and Communication Engineering
-
-Interested in Software Development, Python, AI/ML, VLSI and Embedded Systems.
