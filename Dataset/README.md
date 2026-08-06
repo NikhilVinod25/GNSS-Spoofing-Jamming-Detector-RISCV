@@ -6,44 +6,53 @@ using RISC-V** project.
 
 ## Dataset Source
 
-The dataset used in this project was obtained from:
+The data used in this project was obtained from the **JammerTest 2024** dataset:
 
-**Dataset:** [GNSS Dataset Under Jamming, Spoofing, and Meaconing Conditions (JammerTest 2024)]
+- **Dataset:** GNSS Dataset Under Jamming, Spoofing, and Meaconing Conditions (JammerTest 2024)
+- **Repository:** Zenodo
+- **Dataset Link:** https://zenodo.org/records/15911589
+- **DOI:** https://doi.org/10.5281/zenodo.15911589
 
-**Source:** [Zenodo]
+### Citation
 
-**Dataset Link:** [https://zenodo.org/records/15911589]
+M. I. Sayyaf, M. Ortiz, and V. Renaudin,  
+*"GNSS Dataset Under Jamming, Spoofing, and Meaconing Conditions (JammerTest 2024),"*  
+Zenodo, Jul. 15, 2025.  
+doi: 10.5281/zenodo.15911589.
 
-**Citation:** [M. I. Sayyaf, . miguel . ortizand V. Renaudin, “GNSS Dataset Under Jamming, Spoofing, and Meaconing Conditions (JammerTest 2024)”. Zenodo, Jul. 15, 2025. doi: 10.5281/zenodo.15911589.]
-
-> The dataset is not originally created by the authors of this project.
-> Credit for the original data belongs to the respective dataset creators
-> and publishers.
+> **Note:** The original dataset was not created by the authors of this
+> project. Credit for the data belongs to the original dataset creators and
+> publishers.
 
 ## Purpose
 
-The dataset was used to develop a machine-learning model capable of
-distinguishing between different GNSS operating conditions.
+The dataset was used to develop and evaluate a machine-learning model capable
+of distinguishing between different GNSS operating conditions.
 
-The classification problem considered in this project consists of three
+For this project, the classification problem was formulated using three
 classes:
 
-- **Normal** – Represents legitimate GNSS operation without intentional interference.
-- **Jamming** – Represents GNSS reception affected by intentional radio-frequency interference.
-- **Spoofing** – Represents manipulated or counterfeit GNSS signals intended to mislead the receiver.
+- **Normal** – Legitimate GNSS operation without intentional interference.
+- **Jamming** – GNSS reception affected by intentional radio-frequency interference.
+- **Spoofing** – Manipulated or counterfeit GNSS signals intended to mislead the receiver.
+
+Although the original JammerTest 2024 dataset also contains data associated
+with meaconing conditions, this project focuses on the **Normal, Jamming, and
+Spoofing** classes required for the implemented detection system.
 
 ## Dataset Processing
 
-Before training the classifier, the original data was processed using Python.
+The original GNSS data was processed using Python before being used for
+machine-learning model development.
 
 The preprocessing pipeline included:
 
-1. Loading the GNSS dataset.
-2. Selecting the features required for classification.
+1. Loading the required GNSS data.
+2. Selecting the relevant samples and features.
 3. Cleaning and preprocessing the data.
-4. Assigning class labels for Normal, Jamming and Spoofing conditions.
-5. Preparing the data for machine-learning training and evaluation.
-6. Training a Support Vector Machine (SVM) classifier.
+4. Assigning labels for Normal, Jamming, and Spoofing conditions.
+5. Preparing the processed data for machine-learning training and evaluation.
+6. Training and evaluating a Support Vector Machine (SVM) classifier.
 
 The Python scripts used for preprocessing and model development are available
 in the [`Python`](../Python/) directory.
@@ -53,17 +62,48 @@ in the [`Python`](../Python/) directory.
 A **Support Vector Machine (SVM)** classifier was trained using the processed
 GNSS data.
 
-The trained model was subsequently adapted for embedded implementation and
-deployed on a **RISC-V soft-core processor implemented on FPGA**.
+The trained model parameters were subsequently adapted for embedded inference
+and deployed on a **RISC-V soft-core processor implemented on an FPGA**.
 
-The objective was to provide a lightweight classifier suitable for real-time
-GNSS threat detection on resource-constrained embedded hardware.
+The objective was to develop a lightweight classification system suitable for
+real-time GNSS threat detection on resource-constrained embedded hardware.
 
 ## Dataset Files
 
-The dataset files used for this project are stored in this directory.
+The files contained in this directory represent the data used during the
+machine-learning development stage of this project.
 
 ```text
 Dataset/
-├── [dataset-file-name.csv]
+├── <Dataset_Balanced.csv>
 └── README.md
+```
+
+Replace `<dataset-file-name.csv>` above with the actual filename present in
+this directory.
+
+## Related Project Files
+
+- [`../Python/`](../Python/) – Data preprocessing and SVM development scripts
+- [`../Firmware/`](../Firmware/) – RISC-V embedded inference firmware
+- [`../Vivado/`](../Vivado/) – FPGA implementation files
+- [`../Docs/`](../Docs/) – Detailed project documentation
+
+## License and Attribution
+
+This repository does not claim ownership of the original **JammerTest 2024**
+dataset.
+
+Users who wish to reuse or redistribute the original data should refer to the
+official Zenodo dataset page for the applicable licensing terms and citation
+requirements.
+
+When using the dataset in academic or research work, please cite the original
+dataset creators and the corresponding Zenodo record.
+
+## Reference
+
+M. I. Sayyaf, M. Ortiz, and V. Renaudin,  
+*"GNSS Dataset Under Jamming, Spoofing, and Meaconing Conditions (JammerTest 2024),"*  
+Zenodo, 2025.  
+doi: 10.5281/zenodo.15911589.
