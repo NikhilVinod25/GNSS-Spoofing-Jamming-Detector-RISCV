@@ -37,7 +37,7 @@ The general workflow is:
 **GNSS Data → Feature Processing → SVM Training → Model Parameter Extraction → RISC-V Firmware → FPGA Implementation → Threat Classification**
 
 <!-- Replace the filename below with your actual image filename -->
-![System Architecture](Images/block_diagram.png)
+![System Architecture](Images/Block_Diagram.png)
 
 ## Hardware Used
 
@@ -119,17 +119,17 @@ The implemented system demonstrates the feasibility of deploying a lightweight m
 ### Classification Results
 
 <!-- Replace with your actual filename -->
-![Classification Results](Images/Confusion Matrix.png)
+![Classification Results](Images/Confusion_Matrix.png)
 
 ### FPGA Implementation
 
 <!-- Replace with your actual filename -->
-![FPGA Implementation](Images/Vivado Block Design.png)
+![FPGA Implementation](Images/Vivado_Block_Design.png)
 
 ### Hardware Setup
 
 <!-- Replace with your actual filename -->
-![Hardware Setup](Images/Spoofing State Output.png)
+![Hardware Setup](Images/Spoofing_State_Output.png)
 
 ## Demonstration
 
