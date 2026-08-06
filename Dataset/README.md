@@ -101,9 +101,3 @@ requirements.
 When using the dataset in academic or research work, please cite the original
 dataset creators and the corresponding Zenodo record.
 
-## Reference
-
-M. I. Sayyaf, M. Ortiz, and V. Renaudin,  
-*"GNSS Dataset Under Jamming, Spoofing, and Meaconing Conditions (JammerTest 2024),"*  
-Zenodo, 2025.  
-doi: 10.5281/zenodo.15911589.
