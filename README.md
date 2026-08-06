@@ -147,5 +147,6 @@ Detailed information regarding the design, implementation, methodology and resul
 
 - **Nikhil Vinod** — [GitHub](https://github.com/NikhilVinod25)
 - **Pranav S** — [GitHub](https://github.com/PranavS003)
+- **Vishnu S Nambiar** — [GitHub](https://github.com/Vishnu-S-Nambiar)
 
 **Electronics and Communication Engineering**
