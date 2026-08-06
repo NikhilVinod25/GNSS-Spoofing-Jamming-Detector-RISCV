@@ -143,3 +143,9 @@ The demonstration shows the operation of the implemented system and the correspo
 
 Detailed information regarding the design, implementation, methodology and results is available in the project report inside the `Docs` directory.
 
+## 👥 Project Team
+
+- **Nikhil Vinod** — [GitHub](https://github.com/NikhilVinod25)
+- **Pranav S** — [GitHub](https://github.com/PranavS003)
+
+**Electronics and Communication Engineering**
