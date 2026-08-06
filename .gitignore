@@ -1,0 +1,171 @@
+# ============================================================
+# GNSS Spoofing and Jamming Detector using RISC-V
+# .gitignore
+# ============================================================
+
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter checkpoints (if generated accidentally)
+.ipynb_checkpoints/
+
+
+# ------------------------------------------------------------
+# Machine Learning / Temporary Model Files
+# ------------------------------------------------------------
+
+*.pkl
+*.joblib
+
+# Uncomment if generated model files should not be tracked
+# *.npy
+# *.npz
+
+
+# ------------------------------------------------------------
+# Xilinx Vivado Generated Files
+# ------------------------------------------------------------
+
+*.jou
+*.log
+*.str
+*.tmp
+*.bak
+*.backup
+
+.Xil/
+.cache/
+.gen/
+.hw/
+.ip_user_files/
+.runs/
+.sim/
+
+# Vivado generated project directories
+*.cache/
+*.gen/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+
+# Vivado generated webtalk files
+*.xml
+*.wdf
+*.wcfg
+
+# Generated simulation files
+xsim.dir/
+webtalk/
+webtalk_*.jou
+webtalk_*.log
+
+# Generated IP files
+*.dcp
+
+
+# ------------------------------------------------------------
+# FPGA Output Files
+# ------------------------------------------------------------
+
+# Uncomment these if you DO NOT want generated bitstreams
+# stored in GitHub.
+#
+# *.bit
+# *.bin
+
+
+# ------------------------------------------------------------
+# RISC-V / C Build Files
+# ------------------------------------------------------------
+
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.exe
+
+# Compiled firmware
+*.elf
+*.hex
+*.map
+*.lst
+
+# Dependency files
+*.d
+
+
+# ------------------------------------------------------------
+# Editors / IDEs
+# ------------------------------------------------------------
+
+.vscode/
+.idea/
+
+*.swp
+*.swo
+*~
+
+
+# ------------------------------------------------------------
+# Windows
+# ------------------------------------------------------------
+
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+$RECYCLE.BIN/
+
+
+# ------------------------------------------------------------
+# macOS
+# ------------------------------------------------------------
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+
+# ------------------------------------------------------------
+# Linux
+# ------------------------------------------------------------
+
+*~
+.directory
+
+
+# ------------------------------------------------------------
+# Temporary Files
+# ------------------------------------------------------------
+
+*.temp
+*.tmp
+*.old
+*.orig
+
+temp/
+tmp/
